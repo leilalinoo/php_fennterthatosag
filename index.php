@@ -40,7 +40,7 @@
             echo "<th>Fenntarthatóság</th></tr>";
             
             for ($i=0; $i < count($fogyasztas); $i++) { 
-                print_r("<td>$fogyasztas[$i]</td>");
+                print_r("<td>$fogyasztas[$i]</td><td>$helyzet</td><td>$fenntarthatosag</td>");
             }
             echo "</tr></table>";
 
