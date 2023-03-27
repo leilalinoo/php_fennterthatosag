@@ -35,14 +35,14 @@
             $helyzet = array("a környezet pusztul", "környezeti egyensúly", "a környezet megújul");
             $fenntarthatosag = array("nem fenntartható", "fenntartható, nem változó állapot", "fenntartható fejlődés");
             
-            echo "<table><tr><th>A megújuló erőforrások fogyasztása</th>";
-            echo "<th>A környezet helyzete</th>";
+            echo "<table><tr><th>A megújuló erőforrások fogyasztása -</th>";
+            echo "<th>A környezet helyzete -</th>";
             echo "<th>Fenntarthatóság</th></tr>";
             
             for ($i=0; $i < count($fogyasztas); $i++) { 
-                print_r("<td>$fogyasztas[$i]</td><td>$helyzet</td><td>$fenntarthatosag</td>");
+                print_r("<tr><td>$fogyasztas[$i] - </td><td>$helyzet[$i] - </td><td>$fenntarthatosag[$i]</td></tr>");
             }
-            echo "</tr></table>";
+            echo "</table>";
 
 
             ?>
